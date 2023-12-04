@@ -133,6 +133,16 @@ namespace DRSoftware_POS.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap checkMark {
+            get {
+                object obj = ResourceManager.GetObject("checkMark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap filter14 {
             get {
                 object obj = ResourceManager.GetObject("filter14", resourceCulture);
@@ -286,6 +296,16 @@ namespace DRSoftware_POS.Properties {
         internal static System.Drawing.Bitmap sort_descending14 {
             get {
                 object obj = ResourceManager.GetObject("sort_descending14", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap uncheckMark {
+            get {
+                object obj = ResourceManager.GetObject("uncheckMark", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

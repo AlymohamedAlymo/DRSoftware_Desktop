@@ -105,7 +105,6 @@
             this.SalesTabPage.Controls.Add(this.label2);
             this.SalesTabPage.Controls.Add(this.label1);
             this.SalesTabPage.Controls.Add(this.buttonDRSkin1);
-            this.SalesTabPage.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SalesTabPage.ImageKey = "round_add_a_photo_black_24dp.png";
             this.SalesTabPage.Location = new System.Drawing.Point(4, 31);
             this.SalesTabPage.Name = "SalesTabPage";
@@ -119,9 +118,9 @@
             this.kryptonHeaderGroup1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(21, 80);
+            this.kryptonHeaderGroup1.Location = new System.Drawing.Point(21, 61);
             this.kryptonHeaderGroup1.Name = "kryptonHeaderGroup1";
-            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(1079, 466);
+            this.kryptonHeaderGroup1.Size = new System.Drawing.Size(1079, 485);
             this.kryptonHeaderGroup1.StateCommon.Border.DrawBorders = ((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders)((((ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Top | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Bottom) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Left) 
             | ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.Right)));
@@ -378,7 +377,6 @@
         private System.Windows.Forms.ImageList IconList;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup1;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonDropButton kryptonDropButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonContextMenu kryptonContextMenu1;
@@ -395,5 +393,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonContextMenuLinkLabel kryptonContextMenuLinkLabel1;
         private ComponentFactory.Krypton.Toolkit.KryptonContextMenuRadioButton kryptonContextMenuRadioButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckButton kryptonContextMenuCheckButton1;
+        private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup1;
     }
 }

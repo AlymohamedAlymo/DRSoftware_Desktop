@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace DRSoftware_POS.Controls
 {
-    public partial class NewBill : UserControl
+    public partial class NewInvoice : UserControl
     {
-        public NewBill()
+        public NewInvoice()
         {
             InitializeComponent();
         }
 
-        private void kryptonDataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void expansionPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

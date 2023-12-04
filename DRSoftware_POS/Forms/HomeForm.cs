@@ -28,9 +28,20 @@ namespace DRSoftware_POS.Forms
         {
             kryptonHeaderGroup1.Visible = true;
 
-            NewBill newBill = new NewBill();
+            NewInvoice newBill = new NewInvoice();
             kryptonHeaderGroup1.Panel.Controls.Add(newBill);
+            //newBill.Size = kryptonHeaderGroup1.Size;
+            //newBill.Location = new Point(0,0);
             newBill.Dock = DockStyle.Fill;
+
+            //panel1.Controls.Add(newBill);
+
+
+            //newBill.Dock = DockStyle.Fill;
+
+            //newBill.Anchor = AnchorStyles.Right | AnchorStyles.Left | AnchorStyles.Top | AnchorStyles.Bottom;
+
+
 
         }
     }

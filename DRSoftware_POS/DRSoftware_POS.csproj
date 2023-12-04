@@ -59,11 +59,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\NewBill.cs">
+    <Compile Include="Controls\NewInvoice.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\NewBill.Designer.cs">
-      <DependentUpon>NewBill.cs</DependentUpon>
+    <Compile Include="Controls\NewInvoice.Designer.cs">
+      <DependentUpon>NewInvoice.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\HomeForm.cs">
       <SubType>Form</SubType>
@@ -79,8 +79,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Controls\NewBill.resx">
-      <DependentUpon>NewBill.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\NewInvoice.resx">
+      <DependentUpon>NewInvoice.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\HomeForm.resx">
       <DependentUpon>HomeForm.cs</DependentUpon>
@@ -185,6 +185,12 @@
       <Project>{9be75da2-5917-482a-8a7b-a69d9549b5de}</Project>
       <Name>DRSkin_UI</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checkMark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uncheckMark.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
