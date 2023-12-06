@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace DRSoftware_POS.Properties {
+namespace DRSoftware_lib.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -28,9 +28,9 @@ namespace DRSoftware_POS.Properties {
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-G2RP03B;Initial Catalog=Doctor_ERP;Persist Security Info=True" +
             ";User ID=sa;Password=Aly4807")]
-        public string Doctor_ERPConnectionString {
+        public string Doctor_ERPCNString {
             get {
-                return ((string)(this["Doctor_ERPConnectionString"]));
+                return ((string)(this["Doctor_ERPCNString"]));
             }
         }
     }

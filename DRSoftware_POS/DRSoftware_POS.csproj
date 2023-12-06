@@ -185,6 +185,10 @@
       <Project>{9be75da2-5917-482a-8a7b-a69d9549b5de}</Project>
       <Name>DRSkin_UI</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DRSoftware_lib\DRSoftware_lib.csproj">
+      <Project>{b95fa011-9bb7-4b27-b821-34145310e26b}</Project>
+      <Name>DRSoftware_lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\checkMark.png" />

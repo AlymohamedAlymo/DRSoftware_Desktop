@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B95FA011-9BB7-4B27-B821-34145310E26B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DRSoftware_lib</RootNamespace>
+    <AssemblyName>DRSoftware_lib</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Api\ItemsApi.cs" />
+    <Compile Include="DataModels\Branch.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\Customer.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\Delevery.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\DeliveryArea.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\Discount.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\DRSoftware_Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DRSoftware_Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\DRSoftware_Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\DRSoftware_Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DRSoftware_Model.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\Invoice.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\Item.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ItemGroup.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ItemsDataSet.cs">
+      <DependentUpon>ItemsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ItemsDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ItemsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ItemsType.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ItemsUnit.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\Keeper.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\Offer.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\OutofStore.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\pricing.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\PrintSetting.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\Return.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\ReturnsInvoice.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\Safe.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\Sale.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\Store.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\Supply.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\Tax.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\User.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataModels\WaitInvoice.cs">
+      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Manager\Helper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="DataModels\DRSoftware_Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>DRSoftware_Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="DataModels\DRSoftware_Model.edmx.diagram">
+      <DependentUpon>DRSoftware_Model.edmx</DependentUpon>
+    </None>
+    <None Include="DataModels\ItemsDataSet.xsc">
+      <DependentUpon>ItemsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataModels\ItemsDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ItemsDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataModels\ItemsDataSet.xss">
+      <DependentUpon>ItemsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataModels\DRSoftware_Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DRSoftware_Model.Context.cs</LastGenOutput>
+      <DependentUpon>DRSoftware_Model.edmx</DependentUpon>
+    </Content>
+    <Content Include="DataModels\DRSoftware_Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>DRSoftware_Model.edmx</DependentUpon>
+      <LastGenOutput>DRSoftware_Model.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

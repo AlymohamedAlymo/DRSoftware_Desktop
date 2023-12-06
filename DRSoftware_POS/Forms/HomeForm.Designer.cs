@@ -59,11 +59,14 @@
             this.DeleveryTabPage = new System.Windows.Forms.TabPage();
             this.SettingTabPage = new System.Windows.Forms.TabPage();
             this.IconList = new System.Windows.Forms.ImageList(this.components);
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.tabControlDRSkin1.SuspendLayout();
+            this.HomeTabPage.SuspendLayout();
             this.SalesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).BeginInit();
             this.kryptonHeaderGroup1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlDRSkin1
@@ -88,6 +91,7 @@
             // HomeTabPage
             // 
             this.HomeTabPage.BackColor = System.Drawing.Color.White;
+            this.HomeTabPage.Controls.Add(this.pictureBox5);
             this.HomeTabPage.Location = new System.Drawing.Point(4, 31);
             this.HomeTabPage.Name = "HomeTabPage";
             this.HomeTabPage.Padding = new System.Windows.Forms.Padding(3);
@@ -334,6 +338,16 @@
             this.IconList.Images.SetKeyName(16, "round_error_black_24dp.png");
             this.IconList.Images.SetKeyName(17, "round_event_black_24dp.png");
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox5.Location = new System.Drawing.Point(504, 6);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(288, 386);
+            this.pictureBox5.TabIndex = 21;
+            this.pictureBox5.TabStop = false;
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -354,11 +368,13 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.HomeForm_Load);
             this.tabControlDRSkin1.ResumeLayout(false);
+            this.HomeTabPage.ResumeLayout(false);
             this.SalesTabPage.ResumeLayout(false);
             this.SalesTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).EndInit();
             this.kryptonHeaderGroup1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -394,5 +410,6 @@
         private ComponentFactory.Krypton.Toolkit.KryptonContextMenuRadioButton kryptonContextMenuRadioButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckButton kryptonContextMenuCheckButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup1;
+        private System.Windows.Forms.PictureBox pictureBox5;
     }
 }
