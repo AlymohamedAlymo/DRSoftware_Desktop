@@ -2,16 +2,10 @@
 using DRSoftware_lib.DataModels;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.IO;
 using System.Linq;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static DRSoftware_lib.DataModels.ItemsDataSet;
 
 namespace DRSoftware_POS.Controls
 {
