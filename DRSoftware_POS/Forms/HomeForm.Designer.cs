@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             this.tabControlDRSkin1 = new DRSkin_UI.Controls.TabControlDRSkin();
             this.HomeTabPage = new System.Windows.Forms.TabPage();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.SalesTabPage = new System.Windows.Forms.TabPage();
             this.kryptonHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.buttonDRSkin2 = new DRSkin_UI.Controls.ButtonDRSkin();
@@ -59,14 +60,22 @@
             this.DeleveryTabPage = new System.Windows.Forms.TabPage();
             this.SettingTabPage = new System.Windows.Forms.TabPage();
             this.IconList = new System.Windows.Forms.ImageList(this.components);
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.tabControlDRSkin1.SuspendLayout();
             this.HomeTabPage.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SalesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).BeginInit();
             this.kryptonHeaderGroup1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlDRSkin1
@@ -91,6 +100,13 @@
             // HomeTabPage
             // 
             this.HomeTabPage.BackColor = System.Drawing.Color.White;
+            this.HomeTabPage.Controls.Add(this.button5);
+            this.HomeTabPage.Controls.Add(this.button4);
+            this.HomeTabPage.Controls.Add(this.textBox1);
+            this.HomeTabPage.Controls.Add(this.button3);
+            this.HomeTabPage.Controls.Add(this.button2);
+            this.HomeTabPage.Controls.Add(this.button1);
+            this.HomeTabPage.Controls.Add(this.pictureBox1);
             this.HomeTabPage.Controls.Add(this.pictureBox5);
             this.HomeTabPage.Location = new System.Drawing.Point(4, 31);
             this.HomeTabPage.Name = "HomeTabPage";
@@ -98,6 +114,15 @@
             this.HomeTabPage.Size = new System.Drawing.Size(1127, 573);
             this.HomeTabPage.TabIndex = 0;
             this.HomeTabPage.Text = "الرئيسية";
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox5.Location = new System.Drawing.Point(657, 34);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(288, 219);
+            this.pictureBox5.TabIndex = 21;
+            this.pictureBox5.TabStop = false;
             // 
             // SalesTabPage
             // 
@@ -338,15 +363,76 @@
             this.IconList.Images.SetKeyName(16, "round_error_black_24dp.png");
             this.IconList.Images.SetKeyName(17, "round_event_black_24dp.png");
             // 
-            // pictureBox5
+            // pictureBox1
             // 
-            this.pictureBox5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox5.Location = new System.Drawing.Point(504, 6);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(288, 386);
-            this.pictureBox5.TabIndex = 21;
-            this.pictureBox5.TabStop = false;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pictureBox1.Location = new System.Drawing.Point(261, 34);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(288, 219);
+            this.pictureBox1.TabIndex = 22;
+            this.pictureBox1.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(724, 284);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 23;
+            this.button1.Text = "choose";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(283, 284);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 24;
+            this.button2.Text = "load";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(852, 284);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 25;
+            this.button3.Text = "convert";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(261, 360);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(684, 184);
+            this.textBox1.TabIndex = 26;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(582, 284);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 27;
+            this.button4.Text = "save";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(435, 284);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(114, 23);
+            this.button5.TabIndex = 28;
+            this.button5.Text = "load from database";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // HomeForm
             // 
@@ -369,12 +455,14 @@
             this.Load += new System.EventHandler(this.HomeForm_Load);
             this.tabControlDRSkin1.ResumeLayout(false);
             this.HomeTabPage.ResumeLayout(false);
+            this.HomeTabPage.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.SalesTabPage.ResumeLayout(false);
             this.SalesTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).EndInit();
             this.kryptonHeaderGroup1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -411,5 +499,13 @@
         private ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckButton kryptonContextMenuCheckButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup1;
         private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
     }
 }

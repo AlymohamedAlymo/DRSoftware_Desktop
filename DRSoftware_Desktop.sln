@@ -7,13 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRSoftware_Desktop", "DRSof
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRSoftware_POS", "DRSoftware_POS\DRSoftware_POS.csproj", "{16AB94C4-296B-479E-A430-5CFB745272C1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRSkin_UI", "..\..\Doctor ERP\DRSkin_UI\DRSkin_UI.csproj", "{9BE75DA2-5917-482A-8A7B-A69D9549B5DE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRSoftware_DRSkinUI", "..\..\Doctor ERP\DRSkin_UI\DRSoftware_DRSkinUI.csproj", "{9BE75DA2-5917-482A-8A7B-A69D9549B5DE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP_Skin", "..\..\..\..\Visual Studio Tools\ادوات\MaterialSkin-master\MaterialSkin\ERP_Skin.csproj", "{8EB7611B-68CD-4B8B-987A-11717E2B250C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialSkinExample", "..\..\..\..\Visual Studio Tools\ادوات\MaterialSkin-master\MaterialSkinExample\MaterialSkinExample.csproj", "{47409AA5-62AE-4189-8E83-C471502DF5E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRSoftware_lib", "DRSoftware_lib\DRSoftware_lib.csproj", "{B95FA011-9BB7-4B27-B821-34145310E26B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRSoftware_Lib", "DRSoftware_lib\DRSoftware_Lib.csproj", "{B95FA011-9BB7-4B27-B821-34145310E26B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

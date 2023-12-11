@@ -181,13 +181,13 @@
     <None Include="Resources\sort-descending14.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Doctor ERP\DRSkin_UI\DRSkin_UI.csproj">
+    <ProjectReference Include="..\..\..\Doctor ERP\DRSkin_UI\DRSoftware_DRSkinUI.csproj">
       <Project>{9be75da2-5917-482a-8a7b-a69d9549b5de}</Project>
-      <Name>DRSkin_UI</Name>
+      <Name>DRSoftware_DRSkinUI</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DRSoftware_lib\DRSoftware_lib.csproj">
+    <ProjectReference Include="..\DRSoftware_lib\DRSoftware_Lib.csproj">
       <Project>{b95fa011-9bb7-4b27-b821-34145310e26b}</Project>
-      <Name>DRSoftware_lib</Name>
+      <Name>DRSoftware_Lib</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
@@ -195,6 +195,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\uncheckMark.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-left20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow-right20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clearsort 15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\filter15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first-arrow20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\last-arrow20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\options15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sortdata15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new-data20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clearsort150.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clearsort.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clearsort1515.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

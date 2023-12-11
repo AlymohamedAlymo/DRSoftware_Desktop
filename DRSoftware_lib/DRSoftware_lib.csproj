@@ -41,6 +41,7 @@
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -53,130 +54,163 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Api\ItemsApi.cs" />
-    <Compile Include="DataModels\Branch.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModels\Customer.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModels\Delevery.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModels\DeliveryArea.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModels\Discount.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModels\DRSoftware_Model.Context.cs">
+    <Compile Include="DataBase\DataSet\CustomerDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DRSoftware_Model.Context.tt</DependentUpon>
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\DRSoftware_Model.cs">
+    <Compile Include="DataBase\DataSet\DeleveryDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+      <DependentUpon>DeleveryDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\DRSoftware_Model.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DRSoftware_Model.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="DataModels\Invoice.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModels\Item.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModels\ItemGroup.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
-    </Compile>
-    <Compile Include="DataModels\ItemsDataSet.cs">
-      <DependentUpon>ItemsDataSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="DataModels\ItemsDataSet.Designer.cs">
+    <Compile Include="DataBase\DataSet\ItemsDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ItemsDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\ItemsType.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\Branch.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\ItemsUnit.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\Customer.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\Keeper.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\CustomerGroup.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\Offer.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\Delevery.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\OutofStore.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\DeliveryArea.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\pricing.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\Discount.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\PrintSetting.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\Doctor_ERPModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Doctor_ERPModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\Return.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\Doctor_ERPModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\ReturnsInvoice.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\Doctor_ERPModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Doctor_ERPModel.edmx</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\Safe.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\Invoice.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\Sale.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\Item.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\Store.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\ItemGroup.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\Supply.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\ItemsType.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\Tax.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\ItemsUnit.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\User.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\Keeper.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="DataModels\WaitInvoice.cs">
-      <DependentUpon>DRSoftware_Model.tt</DependentUpon>
+    <Compile Include="DataBase\Models\Offer.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="DataBase\Models\OutofStore.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Models\pricing.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Models\PrintSetting.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Models\Return.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Models\ReturnsInvoice.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Models\Safe.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Models\Sale.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Models\Store.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Models\Supply.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Models\Tax.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Models\User.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DataBase\Models\WaitInvoice.cs">
+      <DependentUpon>Doctor_ERPModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Repositeries\POS\CustomerRep.cs" />
+    <Compile Include="Repositeries\POS\ItemsRep.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Manager\Helper.cs" />
+    <Compile Include="Helper\ImageHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EntityDeploy Include="DataModels\DRSoftware_Model.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DRSoftware_Model.Designer.cs</LastGenOutput>
-    </EntityDeploy>
+    <Compile Include="Helper\DataMapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.Config" />
-    <None Include="DataModels\DRSoftware_Model.edmx.diagram">
-      <DependentUpon>DRSoftware_Model.edmx</DependentUpon>
+    <EntityDeploy Include="DataBase\Models\Doctor_ERPModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Doctor_ERPModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DataBase\DataSet\CustomerDataSet.xsc">
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DataModels\ItemsDataSet.xsc">
+    <None Include="DataBase\DataSet\CustomerDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CustomerDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DataSet\CustomerDataSet.xss">
+      <DependentUpon>CustomerDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DataSet\DeleveryDataSet.xsc">
+      <DependentUpon>DeleveryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DataSet\DeleveryDataSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DeleveryDataSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataBase\DataSet\DeleveryDataSet.xss">
+      <DependentUpon>DeleveryDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\DataSet\ItemsDataSet.xsc">
       <DependentUpon>ItemsDataSet.xsd</DependentUpon>
     </None>
-    <None Include="DataModels\ItemsDataSet.xsd">
+    <None Include="DataBase\DataSet\ItemsDataSet.xsd">
       <SubType>Designer</SubType>
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>ItemsDataSet.Designer.cs</LastGenOutput>
     </None>
-    <None Include="DataModels\ItemsDataSet.xss">
+    <None Include="DataBase\DataSet\ItemsDataSet.xss">
       <DependentUpon>ItemsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DataBase\Models\Doctor_ERPModel.edmx.diagram">
+      <DependentUpon>Doctor_ERPModel.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -185,19 +219,20 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DataModels\DRSoftware_Model.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>DRSoftware_Model.Context.cs</LastGenOutput>
-      <DependentUpon>DRSoftware_Model.edmx</DependentUpon>
-    </Content>
-    <Content Include="DataModels\DRSoftware_Model.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DRSoftware_Model.edmx</DependentUpon>
-      <LastGenOutput>DRSoftware_Model.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="DataBase\Models\Doctor_ERPModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Doctor_ERPModel.edmx</DependentUpon>
+      <LastGenOutput>Doctor_ERPModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="DataBase\Models\Doctor_ERPModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Doctor_ERPModel.edmx</DependentUpon>
+      <LastGenOutput>Doctor_ERPModel.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
