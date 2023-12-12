@@ -33,6 +33,12 @@
             this.DetailsOfBillGroup = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
             this.kryptonGroup2 = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
             this.ItemPanel = new DRSkin_UI.Controls.ExpansionPanel();
+            this.SearchItemsPanel = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
+            this.buttonSpecHeaderGroup3 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
+            this.buttonSpecHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
+            this.dropDown1 = new DRSkin_UI.Controls.DropDown();
+            this.textBoxDRSkin21 = new DRSkin_UI.Controls.TextBoxDRSkin2();
+            this.maskedTextBoxDRSkin1 = new DRSkin_UI.Controls.MaskedTextBoxDRSkin();
             this.SortItemsPanel = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.buttonSpecHeaderGroup4 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
             this.buttonSpecHeaderGroup5 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
@@ -42,12 +48,6 @@
             this.kryptonRadioButton5 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton3 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
             this.kryptonRadioButton4 = new ComponentFactory.Krypton.Toolkit.KryptonRadioButton();
-            this.SearchItemsPanel = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
-            this.buttonSpecHeaderGroup3 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
-            this.buttonSpecHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
-            this.dropDown1 = new DRSkin_UI.Controls.DropDown();
-            this.textBoxDRSkin21 = new DRSkin_UI.Controls.TextBoxDRSkin2();
-            this.maskedTextBoxDRSkin1 = new DRSkin_UI.Controls.MaskedTextBoxDRSkin();
             this.kryptonGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonGroup();
             this.kryptonButton8 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.AddNewBTNItemsListView = new ComponentFactory.Krypton.Toolkit.KryptonButton();
@@ -122,14 +122,14 @@
             this.kryptonGroup2.Panel.SuspendLayout();
             this.kryptonGroup2.SuspendLayout();
             this.ItemPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.SortItemsPanel)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.SortItemsPanel.Panel)).BeginInit();
-            this.SortItemsPanel.Panel.SuspendLayout();
-            this.SortItemsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SearchItemsPanel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SearchItemsPanel.Panel)).BeginInit();
             this.SearchItemsPanel.Panel.SuspendLayout();
             this.SearchItemsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SortItemsPanel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SortItemsPanel.Panel)).BeginInit();
+            this.SortItemsPanel.Panel.SuspendLayout();
+            this.SortItemsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).BeginInit();
             this.kryptonGroup1.Panel.SuspendLayout();
@@ -205,132 +205,6 @@
             this.ItemPanel.TabIndex = 4;
             this.ItemPanel.Title = "الصنف";
             this.ItemPanel.ValidationButtonText = "تأكيد";
-            // 
-            // SortItemsPanel
-            // 
-            this.SortItemsPanel.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup[] {
-            this.buttonSpecHeaderGroup4,
-            this.buttonSpecHeaderGroup5,
-            this.buttonSpecHeaderGroup6});
-            this.SortItemsPanel.Location = new System.Drawing.Point(346, 92);
-            this.SortItemsPanel.Name = "SortItemsPanel";
-            // 
-            // SortItemsPanel.Panel
-            // 
-            this.SortItemsPanel.Panel.Controls.Add(this.kryptonRadioButton1);
-            this.SortItemsPanel.Panel.Controls.Add(this.kryptonRadioButton2);
-            this.SortItemsPanel.Panel.Controls.Add(this.kryptonRadioButton5);
-            this.SortItemsPanel.Panel.Controls.Add(this.kryptonRadioButton3);
-            this.SortItemsPanel.Panel.Controls.Add(this.kryptonRadioButton4);
-            this.SortItemsPanel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.SortItemsPanel.Size = new System.Drawing.Size(251, 186);
-            this.SortItemsPanel.StateCommon.HeaderPrimary.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-            this.SortItemsPanel.StateCommon.HeaderPrimary.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-            this.SortItemsPanel.StateCommon.HeaderPrimary.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.None;
-            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.LongText.Color1 = System.Drawing.Color.White;
-            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.LongText.Color2 = System.Drawing.Color.White;
-            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.LongText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.LongText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SortItemsPanel.StateCommon.HeaderSecondary.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-            this.SortItemsPanel.StateCommon.HeaderSecondary.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
-            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.LongText.Color1 = System.Drawing.Color.WhiteSmoke;
-            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.LongText.Color2 = System.Drawing.Color.WhiteSmoke;
-            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.LongText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.LongText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
-            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.ShortText.Color1 = System.Drawing.Color.White;
-            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.ShortText.Color2 = System.Drawing.Color.White;
-            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
-            this.SortItemsPanel.TabIndex = 27;
-            this.SortItemsPanel.ValuesPrimary.Description = "بحث في بيانات الاصناف بالكامل وفق اختيارات بحث متقدمة";
-            this.SortItemsPanel.ValuesPrimary.Heading = "العميل";
-            this.SortItemsPanel.ValuesPrimary.Image = global::DRSoftware_POS.Properties.Resources.round_assessment_white_24dp;
-            this.SortItemsPanel.ValuesSecondary.Description = "تأكيد اختيار العميل محمد فهمي";
-            this.SortItemsPanel.ValuesSecondary.Heading = "محمد فهمي";
-            this.SortItemsPanel.Visible = false;
-            // 
-            // buttonSpecHeaderGroup4
-            // 
-            this.buttonSpecHeaderGroup4.Edge = ComponentFactory.Krypton.Toolkit.PaletteRelativeEdgeAlign.Near;
-            this.buttonSpecHeaderGroup4.Image = global::DRSoftware_POS.Properties.Resources.round_gps_fixed_white_24dp;
-            this.buttonSpecHeaderGroup4.Style = ComponentFactory.Krypton.Toolkit.PaletteButtonStyle.ButtonSpec;
-            this.buttonSpecHeaderGroup4.UniqueName = "4083FBDCCD864ABFA2A7A198948A087B";
-            // 
-            // buttonSpecHeaderGroup5
-            // 
-            this.buttonSpecHeaderGroup5.Edge = ComponentFactory.Krypton.Toolkit.PaletteRelativeEdgeAlign.Far;
-            this.buttonSpecHeaderGroup5.HeaderLocation = ComponentFactory.Krypton.Toolkit.HeaderLocation.SecondaryHeader;
-            this.buttonSpecHeaderGroup5.Image = global::DRSoftware_POS.Properties.Resources.round_assessment_white_24dp;
-            this.buttonSpecHeaderGroup5.Text = "إلغاء";
-            this.buttonSpecHeaderGroup5.UniqueName = "1148B6546B434B5307AAAFC508062995";
-            // 
-            // buttonSpecHeaderGroup6
-            // 
-            this.buttonSpecHeaderGroup6.Edge = ComponentFactory.Krypton.Toolkit.PaletteRelativeEdgeAlign.Far;
-            this.buttonSpecHeaderGroup6.HeaderLocation = ComponentFactory.Krypton.Toolkit.HeaderLocation.SecondaryHeader;
-            this.buttonSpecHeaderGroup6.Image = global::DRSoftware_POS.Properties.Resources.round_build_white_24dp;
-            this.buttonSpecHeaderGroup6.Text = "تأكيد";
-            this.buttonSpecHeaderGroup6.UniqueName = "0211A0E19F214125ADAE4BC0C7B10CDB";
-            // 
-            // kryptonRadioButton1
-            // 
-            this.kryptonRadioButton1.Checked = true;
-            this.kryptonRadioButton1.Location = new System.Drawing.Point(140, 3);
-            this.kryptonRadioButton1.Name = "kryptonRadioButton1";
-            this.kryptonRadioButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.kryptonRadioButton1.Size = new System.Drawing.Size(61, 20);
-            this.kryptonRadioButton1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonRadioButton1.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonRadioButton1.TabIndex = 19;
-            this.kryptonRadioButton1.Values.Text = "تفاصيل";
-            // 
-            // kryptonRadioButton2
-            // 
-            this.kryptonRadioButton2.Location = new System.Drawing.Point(28, 35);
-            this.kryptonRadioButton2.Name = "kryptonRadioButton2";
-            this.kryptonRadioButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.kryptonRadioButton2.Size = new System.Drawing.Size(77, 20);
-            this.kryptonRadioButton2.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonRadioButton2.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonRadioButton2.TabIndex = 21;
-            this.kryptonRadioButton2.Values.Text = "ايقونةكبيرة";
-            // 
-            // kryptonRadioButton5
-            // 
-            this.kryptonRadioButton5.Location = new System.Drawing.Point(150, 61);
-            this.kryptonRadioButton5.Name = "kryptonRadioButton5";
-            this.kryptonRadioButton5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.kryptonRadioButton5.Size = new System.Drawing.Size(51, 20);
-            this.kryptonRadioButton5.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonRadioButton5.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonRadioButton5.TabIndex = 18;
-            this.kryptonRadioButton5.Values.Text = "عنوان";
-            // 
-            // kryptonRadioButton3
-            // 
-            this.kryptonRadioButton3.Location = new System.Drawing.Point(152, 35);
-            this.kryptonRadioButton3.Name = "kryptonRadioButton3";
-            this.kryptonRadioButton3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.kryptonRadioButton3.Size = new System.Drawing.Size(49, 20);
-            this.kryptonRadioButton3.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonRadioButton3.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonRadioButton3.TabIndex = 20;
-            this.kryptonRadioButton3.Values.Text = "قائمة";
-            // 
-            // kryptonRadioButton4
-            // 
-            this.kryptonRadioButton4.Location = new System.Drawing.Point(15, 3);
-            this.kryptonRadioButton4.Name = "kryptonRadioButton4";
-            this.kryptonRadioButton4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.kryptonRadioButton4.Size = new System.Drawing.Size(90, 20);
-            this.kryptonRadioButton4.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonRadioButton4.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.kryptonRadioButton4.TabIndex = 17;
-            this.kryptonRadioButton4.Values.Text = "ايقونة صغيرة";
             // 
             // SearchItemsPanel
             // 
@@ -496,6 +370,132 @@
             this.maskedTextBoxDRSkin1.TrailingIcon = global::DRSoftware_POS.Properties.Resources.round_phone_black_24dp;
             this.maskedTextBoxDRSkin1.UseSystemPasswordChar = false;
             this.maskedTextBoxDRSkin1.ValidatingType = null;
+            // 
+            // SortItemsPanel
+            // 
+            this.SortItemsPanel.ButtonSpecs.AddRange(new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup[] {
+            this.buttonSpecHeaderGroup4,
+            this.buttonSpecHeaderGroup5,
+            this.buttonSpecHeaderGroup6});
+            this.SortItemsPanel.Location = new System.Drawing.Point(346, 92);
+            this.SortItemsPanel.Name = "SortItemsPanel";
+            // 
+            // SortItemsPanel.Panel
+            // 
+            this.SortItemsPanel.Panel.Controls.Add(this.kryptonRadioButton1);
+            this.SortItemsPanel.Panel.Controls.Add(this.kryptonRadioButton2);
+            this.SortItemsPanel.Panel.Controls.Add(this.kryptonRadioButton5);
+            this.SortItemsPanel.Panel.Controls.Add(this.kryptonRadioButton3);
+            this.SortItemsPanel.Panel.Controls.Add(this.kryptonRadioButton4);
+            this.SortItemsPanel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.SortItemsPanel.Size = new System.Drawing.Size(251, 186);
+            this.SortItemsPanel.StateCommon.HeaderPrimary.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.SortItemsPanel.StateCommon.HeaderPrimary.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.SortItemsPanel.StateCommon.HeaderPrimary.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.None;
+            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.LongText.Color1 = System.Drawing.Color.White;
+            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.LongText.Color2 = System.Drawing.Color.White;
+            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.LongText.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.LongText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.LongText.TextV = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.SortItemsPanel.StateCommon.HeaderPrimary.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SortItemsPanel.StateCommon.HeaderSecondary.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.SortItemsPanel.StateCommon.HeaderSecondary.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
+            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.LongText.Color1 = System.Drawing.Color.WhiteSmoke;
+            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.LongText.Color2 = System.Drawing.Color.WhiteSmoke;
+            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.LongText.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.LongText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Far;
+            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.ShortText.Color1 = System.Drawing.Color.White;
+            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.ShortText.Color2 = System.Drawing.Color.White;
+            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.ShortText.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SortItemsPanel.StateCommon.HeaderSecondary.Content.ShortText.TextH = ComponentFactory.Krypton.Toolkit.PaletteRelativeAlign.Near;
+            this.SortItemsPanel.TabIndex = 27;
+            this.SortItemsPanel.ValuesPrimary.Description = "بحث في بيانات الاصناف بالكامل وفق اختيارات بحث متقدمة";
+            this.SortItemsPanel.ValuesPrimary.Heading = "العميل";
+            this.SortItemsPanel.ValuesPrimary.Image = global::DRSoftware_POS.Properties.Resources.round_assessment_white_24dp;
+            this.SortItemsPanel.ValuesSecondary.Description = "تأكيد اختيار العميل محمد فهمي";
+            this.SortItemsPanel.ValuesSecondary.Heading = "محمد فهمي";
+            this.SortItemsPanel.Visible = false;
+            // 
+            // buttonSpecHeaderGroup4
+            // 
+            this.buttonSpecHeaderGroup4.Edge = ComponentFactory.Krypton.Toolkit.PaletteRelativeEdgeAlign.Near;
+            this.buttonSpecHeaderGroup4.Image = global::DRSoftware_POS.Properties.Resources.round_gps_fixed_white_24dp;
+            this.buttonSpecHeaderGroup4.Style = ComponentFactory.Krypton.Toolkit.PaletteButtonStyle.ButtonSpec;
+            this.buttonSpecHeaderGroup4.UniqueName = "4083FBDCCD864ABFA2A7A198948A087B";
+            // 
+            // buttonSpecHeaderGroup5
+            // 
+            this.buttonSpecHeaderGroup5.Edge = ComponentFactory.Krypton.Toolkit.PaletteRelativeEdgeAlign.Far;
+            this.buttonSpecHeaderGroup5.HeaderLocation = ComponentFactory.Krypton.Toolkit.HeaderLocation.SecondaryHeader;
+            this.buttonSpecHeaderGroup5.Image = global::DRSoftware_POS.Properties.Resources.round_assessment_white_24dp;
+            this.buttonSpecHeaderGroup5.Text = "إلغاء";
+            this.buttonSpecHeaderGroup5.UniqueName = "1148B6546B434B5307AAAFC508062995";
+            // 
+            // buttonSpecHeaderGroup6
+            // 
+            this.buttonSpecHeaderGroup6.Edge = ComponentFactory.Krypton.Toolkit.PaletteRelativeEdgeAlign.Far;
+            this.buttonSpecHeaderGroup6.HeaderLocation = ComponentFactory.Krypton.Toolkit.HeaderLocation.SecondaryHeader;
+            this.buttonSpecHeaderGroup6.Image = global::DRSoftware_POS.Properties.Resources.round_build_white_24dp;
+            this.buttonSpecHeaderGroup6.Text = "تأكيد";
+            this.buttonSpecHeaderGroup6.UniqueName = "0211A0E19F214125ADAE4BC0C7B10CDB";
+            // 
+            // kryptonRadioButton1
+            // 
+            this.kryptonRadioButton1.Checked = true;
+            this.kryptonRadioButton1.Location = new System.Drawing.Point(140, 3);
+            this.kryptonRadioButton1.Name = "kryptonRadioButton1";
+            this.kryptonRadioButton1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.kryptonRadioButton1.Size = new System.Drawing.Size(61, 20);
+            this.kryptonRadioButton1.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonRadioButton1.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonRadioButton1.TabIndex = 19;
+            this.kryptonRadioButton1.Values.Text = "تفاصيل";
+            // 
+            // kryptonRadioButton2
+            // 
+            this.kryptonRadioButton2.Location = new System.Drawing.Point(28, 35);
+            this.kryptonRadioButton2.Name = "kryptonRadioButton2";
+            this.kryptonRadioButton2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.kryptonRadioButton2.Size = new System.Drawing.Size(77, 20);
+            this.kryptonRadioButton2.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonRadioButton2.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonRadioButton2.TabIndex = 21;
+            this.kryptonRadioButton2.Values.Text = "ايقونةكبيرة";
+            // 
+            // kryptonRadioButton5
+            // 
+            this.kryptonRadioButton5.Location = new System.Drawing.Point(150, 61);
+            this.kryptonRadioButton5.Name = "kryptonRadioButton5";
+            this.kryptonRadioButton5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.kryptonRadioButton5.Size = new System.Drawing.Size(51, 20);
+            this.kryptonRadioButton5.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonRadioButton5.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonRadioButton5.TabIndex = 18;
+            this.kryptonRadioButton5.Values.Text = "عنوان";
+            // 
+            // kryptonRadioButton3
+            // 
+            this.kryptonRadioButton3.Location = new System.Drawing.Point(152, 35);
+            this.kryptonRadioButton3.Name = "kryptonRadioButton3";
+            this.kryptonRadioButton3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.kryptonRadioButton3.Size = new System.Drawing.Size(49, 20);
+            this.kryptonRadioButton3.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonRadioButton3.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonRadioButton3.TabIndex = 20;
+            this.kryptonRadioButton3.Values.Text = "قائمة";
+            // 
+            // kryptonRadioButton4
+            // 
+            this.kryptonRadioButton4.Location = new System.Drawing.Point(15, 3);
+            this.kryptonRadioButton4.Name = "kryptonRadioButton4";
+            this.kryptonRadioButton4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.kryptonRadioButton4.Size = new System.Drawing.Size(90, 20);
+            this.kryptonRadioButton4.StateCommon.ShortText.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonRadioButton4.StateCommon.ShortText.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.kryptonRadioButton4.TabIndex = 17;
+            this.kryptonRadioButton4.Values.Text = "ايقونة صغيرة";
             // 
             // kryptonGroup1
             // 
@@ -698,6 +698,7 @@
             this.FiltrBTNItemsListView.Values.Image = global::DRSoftware_POS.Properties.Resources.filter15;
             this.FiltrBTNItemsListView.Values.Text = "";
             this.FiltrBTNItemsListView.Click += new System.EventHandler(this.FiltrBTNItemsListView_Click);
+            this.FiltrBTNItemsListView.MouseHover += new System.EventHandler(this.FiltrBTNItemsListView_MouseHover);
             // 
             // SortBTNItemsListView
             // 
@@ -718,6 +719,7 @@
             this.SortBTNItemsListView.TabIndex = 23;
             this.SortBTNItemsListView.Values.Image = global::DRSoftware_POS.Properties.Resources.sortdata15;
             this.SortBTNItemsListView.Values.Text = "";
+            this.SortBTNItemsListView.MouseHover += new System.EventHandler(this.SortBTNItemsListView_MouseHover);
             // 
             // ItemPanelValidIcon
             // 
@@ -1524,15 +1526,15 @@
             this.kryptonGroup2.ResumeLayout(false);
             this.ItemPanel.ResumeLayout(false);
             this.ItemPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SearchItemsPanel.Panel)).EndInit();
+            this.SearchItemsPanel.Panel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.SearchItemsPanel)).EndInit();
+            this.SearchItemsPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.SortItemsPanel.Panel)).EndInit();
             this.SortItemsPanel.Panel.ResumeLayout(false);
             this.SortItemsPanel.Panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SortItemsPanel)).EndInit();
             this.SortItemsPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.SearchItemsPanel.Panel)).EndInit();
-            this.SearchItemsPanel.Panel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.SearchItemsPanel)).EndInit();
-            this.SearchItemsPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.kryptonGroup1.Panel)).EndInit();
             this.kryptonGroup1.Panel.ResumeLayout(false);
             this.kryptonGroup1.Panel.PerformLayout();

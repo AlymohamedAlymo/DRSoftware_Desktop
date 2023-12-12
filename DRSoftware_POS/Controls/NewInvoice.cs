@@ -1,4 +1,5 @@
 ﻿using ComponentFactory.Krypton.Toolkit;
+using DRSkin_UI.Controls;
 using DRSoftware_lib.DataBase.Models;
 using System;
 using System.Collections.Generic;
@@ -220,6 +221,23 @@ namespace DRSoftware_POS.Controls
         {
             if (SearchItemsPanel.Visible) { SearchItemsPanel.Visible = false; }
             else if (!SearchItemsPanel.Visible) { SearchItemsPanel.Visible = true; }
+
+        }
+
+        private void FiltrBTNItemsListView_MouseHover(object sender, EventArgs e)
+        {
+           var yyy = sender.GetType().GetProperty("Name");
+
+
+            ToolTipBar SnackBarMessage = new ToolTipBar("بحث في سجلات الاصناف", "تم", false);
+            SnackBarMessage.Show(this);
+
+        }
+
+        private void SortBTNItemsListView_MouseHover(object sender, EventArgs e)
+        {
+            ToolTipBar SnackBarMessage = new ToolTipBar("ترتيب النتائج", "تم", false);
+            SnackBarMessage.Show(this);
 
         }
     }
