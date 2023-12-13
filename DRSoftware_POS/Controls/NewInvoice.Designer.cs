@@ -37,7 +37,7 @@
             this.buttonSpecHeaderGroup3 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
             this.buttonSpecHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
             this.dropDown1 = new DRSkin_UI.Controls.DropDown();
-            this.textBoxDRSkin21 = new DRSkin_UI.Controls.TextBoxDRSkin2();
+            this.textBoxDRSkin21 = new DRSkin_UI.Controls.DRTextBox2();
             this.maskedTextBoxDRSkin1 = new DRSkin_UI.Controls.MaskedTextBoxDRSkin();
             this.SortItemsPanel = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.buttonSpecHeaderGroup4 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
@@ -106,7 +106,7 @@
             this.MatchSwitch = new DRSkin_UI.Controls.Switch();
             this.StartWithSwitch = new DRSkin_UI.Controls.Switch();
             this.PhoneNumberTXT = new DRSkin_UI.Controls.MaskedTextBoxDRSkin();
-            this.CustomerSearchTXT = new DRSkin_UI.Controls.TextBoxDRSkin2();
+            this.CustomerSearchTXT = new DRSkin_UI.Controls.DRTextBox2();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.expansionPanel3 = new DRSkin_UI.Controls.ExpansionPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -220,7 +220,7 @@
             this.SearchItemsPanel.Panel.Controls.Add(this.textBoxDRSkin21);
             this.SearchItemsPanel.Panel.Controls.Add(this.maskedTextBoxDRSkin1);
             this.SearchItemsPanel.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.SearchItemsPanel.Size = new System.Drawing.Size(535, 258);
+            this.SearchItemsPanel.Size = new System.Drawing.Size(535, 231);
             this.SearchItemsPanel.StateCommon.HeaderPrimary.Back.Color1 = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
             this.SearchItemsPanel.StateCommon.HeaderPrimary.Back.Color2 = System.Drawing.Color.FromArgb(((int)(((byte)(63)))), ((int)(((byte)(81)))), ((int)(((byte)(181)))));
             this.SearchItemsPanel.StateCommon.HeaderPrimary.Border.DrawBorders = ComponentFactory.Krypton.Toolkit.PaletteDrawBorders.None;
@@ -282,11 +282,11 @@
             this.dropDown1.FormattingEnabled = true;
             this.dropDown1.IntegralHeight = false;
             this.dropDown1.ItemHeight = 43;
-            this.dropDown1.Location = new System.Drawing.Point(-69, 3);
+            this.dropDown1.Location = new System.Drawing.Point(3, 83);
             this.dropDown1.MaxDropDownItems = 4;
             this.dropDown1.MouseState = DRSkin_UI.MouseState.OUT;
             this.dropDown1.Name = "dropDown1";
-            this.dropDown1.Size = new System.Drawing.Size(258, 49);
+            this.dropDown1.Size = new System.Drawing.Size(244, 49);
             this.dropDown1.StartIndex = 0;
             this.dropDown1.TabIndex = 9;
             // 
@@ -305,12 +305,12 @@
             this.textBoxDRSkin21.Hint = "اسم العميل";
             this.textBoxDRSkin21.LeadingIcon = null;
             this.textBoxDRSkin21.LeaveOnEnterKey = true;
-            this.textBoxDRSkin21.Location = new System.Drawing.Point(195, 3);
+            this.textBoxDRSkin21.Location = new System.Drawing.Point(3, 13);
             this.textBoxDRSkin21.MaxLength = 32767;
             this.textBoxDRSkin21.MouseState = DRSkin_UI.MouseState.OUT;
             this.textBoxDRSkin21.Name = "textBoxDRSkin21";
             this.textBoxDRSkin21.PasswordChar = '\0';
-            this.textBoxDRSkin21.PrefixSuffix = DRSkin_UI.Controls.TextBoxDRSkin2.PrefixSuffixTypes.Prefix;
+            this.textBoxDRSkin21.PrefixSuffix = DRSkin_UI.Controls.DRTextBox2.PrefixSuffixTypes.Prefix;
             this.textBoxDRSkin21.PrefixSuffixText = "عميل جديد";
             this.textBoxDRSkin21.ReadOnly = false;
             this.textBoxDRSkin21.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -319,7 +319,7 @@
             this.textBoxDRSkin21.SelectionStart = 0;
             this.textBoxDRSkin21.ShortcutsEnabled = true;
             this.textBoxDRSkin21.ShowAssistiveText = true;
-            this.textBoxDRSkin21.Size = new System.Drawing.Size(313, 64);
+            this.textBoxDRSkin21.Size = new System.Drawing.Size(527, 64);
             this.textBoxDRSkin21.TabIndex = 4;
             this.textBoxDRSkin21.TabStop = false;
             this.textBoxDRSkin21.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -342,7 +342,7 @@
             this.maskedTextBoxDRSkin1.HideSelection = true;
             this.maskedTextBoxDRSkin1.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.maskedTextBoxDRSkin1.LeadingIcon = null;
-            this.maskedTextBoxDRSkin1.Location = new System.Drawing.Point(195, 73);
+            this.maskedTextBoxDRSkin1.Location = new System.Drawing.Point(257, 83);
             this.maskedTextBoxDRSkin1.Mask = "+2 000-0000-000";
             this.maskedTextBoxDRSkin1.MaxLength = 32767;
             this.maskedTextBoxDRSkin1.MouseState = DRSkin_UI.MouseState.OUT;
@@ -360,7 +360,7 @@
             this.maskedTextBoxDRSkin1.SelectionStart = 0;
             this.maskedTextBoxDRSkin1.ShortcutsEnabled = true;
             this.maskedTextBoxDRSkin1.ShowAssistiveText = true;
-            this.maskedTextBoxDRSkin1.Size = new System.Drawing.Size(313, 64);
+            this.maskedTextBoxDRSkin1.Size = new System.Drawing.Size(273, 64);
             this.maskedTextBoxDRSkin1.SkipLiterals = true;
             this.maskedTextBoxDRSkin1.TabIndex = 8;
             this.maskedTextBoxDRSkin1.TabStop = false;
@@ -1211,12 +1211,12 @@
             this.CustomerPNL.ExpandHeight = 501;
             this.CustomerPNL.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.CustomerPNL.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CustomerPNL.Location = new System.Drawing.Point(502, 16);
+            this.CustomerPNL.Location = new System.Drawing.Point(436, 16);
             this.CustomerPNL.Margin = new System.Windows.Forms.Padding(16, 1, 16, 0);
             this.CustomerPNL.MouseState = DRSkin_UI.MouseState.HOVER;
             this.CustomerPNL.Name = "CustomerPNL";
             this.CustomerPNL.Padding = new System.Windows.Forms.Padding(24, 64, 24, 16);
-            this.CustomerPNL.Size = new System.Drawing.Size(607, 48);
+            this.CustomerPNL.Size = new System.Drawing.Size(673, 48);
             this.CustomerPNL.TabIndex = 0;
             this.CustomerPNL.Title = "العميل";
             this.CustomerPNL.ValidationButtonText = "تأكيد";
@@ -1232,7 +1232,7 @@
             this.CustomersListView.Name = "CustomersListView";
             this.CustomersListView.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.CustomersListView.RightToLeftLayout = true;
-            this.CustomersListView.Size = new System.Drawing.Size(551, 222);
+            this.CustomersListView.Size = new System.Drawing.Size(617, 222);
             this.CustomersListView.TabIndex = 23;
             this.CustomersListView.UseCompatibleStateImageBehavior = false;
             // 
@@ -1262,42 +1262,40 @@
             this.TypeCustomerDropDown.FormattingEnabled = true;
             this.TypeCustomerDropDown.IntegralHeight = false;
             this.TypeCustomerDropDown.ItemHeight = 43;
-            this.TypeCustomerDropDown.Location = new System.Drawing.Point(27, 137);
+            this.TypeCustomerDropDown.Location = new System.Drawing.Point(144, 137);
             this.TypeCustomerDropDown.MaxDropDownItems = 4;
             this.TypeCustomerDropDown.MouseState = DRSkin_UI.MouseState.OUT;
             this.TypeCustomerDropDown.Name = "TypeCustomerDropDown";
-            this.TypeCustomerDropDown.Size = new System.Drawing.Size(258, 49);
+            this.TypeCustomerDropDown.Size = new System.Drawing.Size(244, 49);
             this.TypeCustomerDropDown.StartIndex = 0;
             this.TypeCustomerDropDown.TabIndex = 7;
             // 
             // MatchSwitch
             // 
-            this.MatchSwitch.AutoSize = true;
             this.MatchSwitch.Depth = 0;
-            this.MatchSwitch.Location = new System.Drawing.Point(24, 86);
+            this.MatchSwitch.Location = new System.Drawing.Point(24, 95);
             this.MatchSwitch.Margin = new System.Windows.Forms.Padding(0);
             this.MatchSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
             this.MatchSwitch.MouseState = DRSkin_UI.MouseState.HOVER;
             this.MatchSwitch.Name = "MatchSwitch";
             this.MatchSwitch.Ripple = true;
-            this.MatchSwitch.Size = new System.Drawing.Size(86, 37);
+            this.MatchSwitch.Size = new System.Drawing.Size(112, 29);
             this.MatchSwitch.TabIndex = 6;
             this.MatchSwitch.Text = "متطابق";
             this.MatchSwitch.UseVisualStyleBackColor = true;
             // 
             // StartWithSwitch
             // 
-            this.StartWithSwitch.AutoSize = true;
             this.StartWithSwitch.Checked = true;
             this.StartWithSwitch.CheckState = System.Windows.Forms.CheckState.Checked;
             this.StartWithSwitch.Depth = 0;
-            this.StartWithSwitch.Location = new System.Drawing.Point(24, 55);
+            this.StartWithSwitch.Location = new System.Drawing.Point(24, 64);
             this.StartWithSwitch.Margin = new System.Windows.Forms.Padding(0);
             this.StartWithSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
             this.StartWithSwitch.MouseState = DRSkin_UI.MouseState.HOVER;
             this.StartWithSwitch.Name = "StartWithSwitch";
             this.StartWithSwitch.Ripple = true;
-            this.StartWithSwitch.Size = new System.Drawing.Size(80, 37);
+            this.StartWithSwitch.Size = new System.Drawing.Size(97, 29);
             this.StartWithSwitch.TabIndex = 5;
             this.StartWithSwitch.Text = "يبدأ بـ";
             this.StartWithSwitch.UseVisualStyleBackColor = true;
@@ -1318,7 +1316,7 @@
             this.PhoneNumberTXT.HideSelection = true;
             this.PhoneNumberTXT.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.PhoneNumberTXT.LeadingIcon = null;
-            this.PhoneNumberTXT.Location = new System.Drawing.Point(328, 137);
+            this.PhoneNumberTXT.Location = new System.Drawing.Point(394, 137);
             this.PhoneNumberTXT.Mask = "+2 000-0000-000";
             this.PhoneNumberTXT.MaxLength = 32767;
             this.PhoneNumberTXT.MouseState = DRSkin_UI.MouseState.OUT;
@@ -1360,14 +1358,14 @@
             this.CustomerSearchTXT.HelperText = "ابحث عن العميل بالاسم";
             this.CustomerSearchTXT.HideSelection = true;
             this.CustomerSearchTXT.Hint = "اسم العميل";
-            this.CustomerSearchTXT.LeadingIcon = null;
+            this.CustomerSearchTXT.LeadingIcon = global::DRSoftware_POS.Properties.Resources.round_add_black_24dp;
             this.CustomerSearchTXT.LeaveOnEnterKey = true;
-            this.CustomerSearchTXT.Location = new System.Drawing.Point(113, 67);
+            this.CustomerSearchTXT.Location = new System.Drawing.Point(144, 67);
             this.CustomerSearchTXT.MaxLength = 32767;
             this.CustomerSearchTXT.MouseState = DRSkin_UI.MouseState.OUT;
             this.CustomerSearchTXT.Name = "CustomerSearchTXT";
             this.CustomerSearchTXT.PasswordChar = '\0';
-            this.CustomerSearchTXT.PrefixSuffix = DRSkin_UI.Controls.TextBoxDRSkin2.PrefixSuffixTypes.Prefix;
+            this.CustomerSearchTXT.PrefixSuffix = DRSkin_UI.Controls.DRTextBox2.PrefixSuffixTypes.Prefix;
             this.CustomerSearchTXT.PrefixSuffixText = "عميل جديد";
             this.CustomerSearchTXT.ReadOnly = false;
             this.CustomerSearchTXT.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1376,7 +1374,7 @@
             this.CustomerSearchTXT.SelectionStart = 0;
             this.CustomerSearchTXT.ShortcutsEnabled = true;
             this.CustomerSearchTXT.ShowAssistiveText = true;
-            this.CustomerSearchTXT.Size = new System.Drawing.Size(465, 64);
+            this.CustomerSearchTXT.Size = new System.Drawing.Size(500, 64);
             this.CustomerSearchTXT.TabIndex = 3;
             this.CustomerSearchTXT.TabStop = false;
             this.CustomerSearchTXT.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -1389,7 +1387,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::DRSoftware_POS.Properties.Resources.uncheckMark;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(570, 10);
+            this.pictureBox1.Location = new System.Drawing.Point(636, 10);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(30, 24);
             this.pictureBox1.TabIndex = 2;
@@ -1405,7 +1403,7 @@
             this.expansionPanel3.Depth = 0;
             this.expansionPanel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.expansionPanel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.expansionPanel3.Location = new System.Drawing.Point(502, 81);
+            this.expansionPanel3.Location = new System.Drawing.Point(436, 81);
             this.expansionPanel3.Margin = new System.Windows.Forms.Padding(16, 1, 16, 0);
             this.expansionPanel3.MouseState = DRSkin_UI.MouseState.HOVER;
             this.expansionPanel3.Name = "expansionPanel3";
@@ -1436,12 +1434,12 @@
             this.expansionPanel2.Description = "ادخل بيانات الشحن و التوصيل";
             this.expansionPanel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.expansionPanel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.expansionPanel2.Location = new System.Drawing.Point(805, 81);
+            this.expansionPanel2.Location = new System.Drawing.Point(739, 81);
             this.expansionPanel2.Margin = new System.Windows.Forms.Padding(16, 1, 16, 0);
             this.expansionPanel2.MouseState = DRSkin_UI.MouseState.HOVER;
             this.expansionPanel2.Name = "expansionPanel2";
             this.expansionPanel2.Padding = new System.Windows.Forms.Padding(24, 64, 24, 16);
-            this.expansionPanel2.Size = new System.Drawing.Size(304, 48);
+            this.expansionPanel2.Size = new System.Drawing.Size(370, 48);
             this.expansionPanel2.TabIndex = 1;
             this.expansionPanel2.Title = "الشحن";
             this.expansionPanel2.ValidationButtonText = "تأكيد";
@@ -1452,7 +1450,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::DRSoftware_POS.Properties.Resources.checkMark;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(267, 10);
+            this.pictureBox2.Location = new System.Drawing.Point(333, 10);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(33, 24);
             this.pictureBox2.TabIndex = 3;
@@ -1596,7 +1594,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox ItemPanelValidIcon;
-        private DRSkin_UI.Controls.TextBoxDRSkin2 CustomerSearchTXT;
+        private DRSkin_UI.Controls.DRTextBox2 CustomerSearchTXT;
         private DRSkin_UI.Controls.MaskedTextBoxDRSkin PhoneNumberTXT;
         private DRSkin_UI.Controls.Switch MatchSwitch;
         private DRSkin_UI.Controls.Switch StartWithSwitch;
@@ -1645,7 +1643,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton3;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton4;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton5;
-        private DRSkin_UI.Controls.TextBoxDRSkin2 textBoxDRSkin21;
+        private DRSkin_UI.Controls.DRTextBox2 textBoxDRSkin21;
         private DRSkin_UI.Controls.DropDown dropDown1;
         private DRSkin_UI.Controls.MaskedTextBoxDRSkin maskedTextBoxDRSkin1;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup SearchItemsPanel;

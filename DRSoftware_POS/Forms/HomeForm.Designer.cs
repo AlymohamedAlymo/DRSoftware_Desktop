@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             this.tabControlDRSkin1 = new DRSkin_UI.Controls.TabControlDRSkin();
             this.HomeTabPage = new System.Windows.Forms.TabPage();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.SalesTabPage = new System.Windows.Forms.TabPage();
             this.kryptonHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.buttonDRSkin2 = new DRSkin_UI.Controls.ButtonDRSkin();
@@ -60,22 +59,15 @@
             this.DeleveryTabPage = new System.Windows.Forms.TabPage();
             this.SettingTabPage = new System.Windows.Forms.TabPage();
             this.IconList = new System.Windows.Forms.ImageList(this.components);
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.drTextBox21 = new DRSkin_UI.Controls.DRTextBox2();
+            this.drTextBox22 = new DRSkin_UI.Controls.DRTextBox2();
             this.tabControlDRSkin1.SuspendLayout();
             this.HomeTabPage.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SalesTabPage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).BeginInit();
             this.kryptonHeaderGroup1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControlDRSkin1
@@ -100,29 +92,14 @@
             // HomeTabPage
             // 
             this.HomeTabPage.BackColor = System.Drawing.Color.White;
-            this.HomeTabPage.Controls.Add(this.button5);
-            this.HomeTabPage.Controls.Add(this.button4);
-            this.HomeTabPage.Controls.Add(this.textBox1);
-            this.HomeTabPage.Controls.Add(this.button3);
-            this.HomeTabPage.Controls.Add(this.button2);
-            this.HomeTabPage.Controls.Add(this.button1);
-            this.HomeTabPage.Controls.Add(this.pictureBox1);
-            this.HomeTabPage.Controls.Add(this.pictureBox5);
+            this.HomeTabPage.Controls.Add(this.drTextBox22);
+            this.HomeTabPage.Controls.Add(this.drTextBox21);
             this.HomeTabPage.Location = new System.Drawing.Point(4, 31);
             this.HomeTabPage.Name = "HomeTabPage";
             this.HomeTabPage.Padding = new System.Windows.Forms.Padding(3);
             this.HomeTabPage.Size = new System.Drawing.Size(1127, 573);
             this.HomeTabPage.TabIndex = 0;
             this.HomeTabPage.Text = "الرئيسية";
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox5.Location = new System.Drawing.Point(657, 34);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(288, 219);
-            this.pictureBox5.TabIndex = 21;
-            this.pictureBox5.TabStop = false;
             // 
             // SalesTabPage
             // 
@@ -171,12 +148,12 @@
             this.buttonDRSkin2.Depth = 0;
             this.buttonDRSkin2.HighEmphasis = true;
             this.buttonDRSkin2.Icon = global::DRSoftware_POS.Properties.Resources.baseline_favorite_border_black_24dp;
-            this.buttonDRSkin2.Location = new System.Drawing.Point(863, 255);
+            this.buttonDRSkin2.Location = new System.Drawing.Point(906, 255);
             this.buttonDRSkin2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.buttonDRSkin2.MouseState = DRSkin_UI.MouseState.HOVER;
             this.buttonDRSkin2.Name = "buttonDRSkin2";
             this.buttonDRSkin2.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.buttonDRSkin2.Size = new System.Drawing.Size(192, 36);
+            this.buttonDRSkin2.Size = new System.Drawing.Size(149, 36);
             this.buttonDRSkin2.TabIndex = 1;
             this.buttonDRSkin2.Text = "مراجعة الفواتير";
             this.buttonDRSkin2.Type = DRSkin_UI.Controls.ButtonDRSkin.MaterialButtonType.Contained;
@@ -291,12 +268,12 @@
             this.buttonDRSkin1.Depth = 0;
             this.buttonDRSkin1.HighEmphasis = true;
             this.buttonDRSkin1.Icon = global::DRSoftware_POS.Properties.Resources.baseline_fingerprint_black_24dp;
-            this.buttonDRSkin1.Location = new System.Drawing.Point(892, 207);
+            this.buttonDRSkin1.Location = new System.Drawing.Point(921, 207);
             this.buttonDRSkin1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.buttonDRSkin1.MouseState = DRSkin_UI.MouseState.HOVER;
             this.buttonDRSkin1.Name = "buttonDRSkin1";
             this.buttonDRSkin1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.buttonDRSkin1.Size = new System.Drawing.Size(163, 36);
+            this.buttonDRSkin1.Size = new System.Drawing.Size(134, 36);
             this.buttonDRSkin1.TabIndex = 0;
             this.buttonDRSkin1.Text = "فاتورة جديدة";
             this.buttonDRSkin1.Type = DRSkin_UI.Controls.ButtonDRSkin.MaterialButtonType.Contained;
@@ -363,76 +340,81 @@
             this.IconList.Images.SetKeyName(16, "round_error_black_24dp.png");
             this.IconList.Images.SetKeyName(17, "round_event_black_24dp.png");
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Location = new System.Drawing.Point(261, 34);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(288, 219);
-            this.pictureBox1.TabIndex = 22;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(724, 284);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 23;
-            this.button1.Text = "choose";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(283, 284);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 24;
-            this.button2.Text = "load";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(852, 284);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 25;
-            this.button3.Text = "convert";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(261, 360);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(684, 184);
-            this.textBox1.TabIndex = 26;
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // button4
+            // drTextBox21
             // 
-            this.button4.Location = new System.Drawing.Point(582, 284);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 27;
-            this.button4.Text = "save";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.drTextBox21.AnimateReadOnly = true;
+            this.drTextBox21.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.drTextBox21.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.drTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.drTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.drTextBox21.Depth = 0;
+            this.drTextBox21.ErrorMessage = "رسالة الخطاء";
+            this.drTextBox21.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.drTextBox21.HelperText = "المساعد اختبار";
+            this.drTextBox21.HideSelection = false;
+            this.drTextBox21.Hint = "هنت اختبار";
+            this.drTextBox21.LeadingIcon = global::DRSoftware_POS.Properties.Resources.arrow_right20;
+            this.drTextBox21.LeaveOnEnterKey = true;
+            this.drTextBox21.Location = new System.Drawing.Point(472, 173);
+            this.drTextBox21.MaxLength = 32767;
+            this.drTextBox21.MouseState = DRSkin_UI.MouseState.OUT;
+            this.drTextBox21.Name = "drTextBox21";
+            this.drTextBox21.PasswordChar = '\0';
+            this.drTextBox21.PrefixSuffix = DRSkin_UI.Controls.DRTextBox2.PrefixSuffixTypes.Suffix;
+            this.drTextBox21.PrefixSuffixText = "اختبار السافكس";
+            this.drTextBox21.ReadOnly = false;
+            this.drTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.drTextBox21.SelectedText = "";
+            this.drTextBox21.SelectionLength = 0;
+            this.drTextBox21.SelectionStart = 0;
+            this.drTextBox21.ShortcutsEnabled = true;
+            this.drTextBox21.Size = new System.Drawing.Size(358, 48);
+            this.drTextBox21.TabIndex = 0;
+            this.drTextBox21.TabStop = false;
+            this.drTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.drTextBox21.TrailingIcon = null;
+            this.drTextBox21.UseSystemPasswordChar = false;
             // 
-            // button5
+            // drTextBox22
             // 
-            this.button5.Location = new System.Drawing.Point(435, 284);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(114, 23);
-            this.button5.TabIndex = 28;
-            this.button5.Text = "load from database";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.drTextBox22.AnimateReadOnly = false;
+            this.drTextBox22.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.drTextBox22.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.drTextBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.drTextBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.drTextBox22.Depth = 0;
+            this.drTextBox22.ErrorMessage = "رسالة الخطاء";
+            this.drTextBox22.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.drTextBox22.HelperText = "اختبار المساعد";
+            this.drTextBox22.HideSelection = true;
+            this.drTextBox22.Hint = "اختبار الهنت";
+            this.drTextBox22.LeadingIcon = global::DRSoftware_POS.Properties.Resources.arrow_right20;
+            this.drTextBox22.Location = new System.Drawing.Point(472, 289);
+            this.drTextBox22.MaxLength = 32767;
+            this.drTextBox22.MouseState = DRSkin_UI.MouseState.OUT;
+            this.drTextBox22.Name = "drTextBox22";
+            this.drTextBox22.PasswordChar = '\0';
+            this.drTextBox22.PrefixSuffix = DRSkin_UI.Controls.DRTextBox2.PrefixSuffixTypes.Prefix;
+            this.drTextBox22.PrefixSuffixText = "Suffix text";
+            this.drTextBox22.ReadOnly = false;
+            this.drTextBox22.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.drTextBox22.SelectedText = "";
+            this.drTextBox22.SelectionLength = 0;
+            this.drTextBox22.SelectionStart = 0;
+            this.drTextBox22.ShortcutsEnabled = true;
+            this.drTextBox22.ShowAssistiveText = true;
+            this.drTextBox22.Size = new System.Drawing.Size(358, 52);
+            this.drTextBox22.TabIndex = 1;
+            this.drTextBox22.TabStop = false;
+            this.drTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.drTextBox22.TrailingIcon = global::DRSoftware_POS.Properties.Resources.arrow_left20;
+            this.drTextBox22.UseAccent = false;
+            this.drTextBox22.UseSystemPasswordChar = false;
+            this.drTextBox22.UseTallSize = false;
             // 
             // HomeForm
             // 
@@ -455,14 +437,11 @@
             this.Load += new System.EventHandler(this.HomeForm_Load);
             this.tabControlDRSkin1.ResumeLayout(false);
             this.HomeTabPage.ResumeLayout(false);
-            this.HomeTabPage.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.SalesTabPage.ResumeLayout(false);
             this.SalesTabPage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1.Panel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kryptonHeaderGroup1)).EndInit();
             this.kryptonHeaderGroup1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -498,14 +477,8 @@
         private ComponentFactory.Krypton.Toolkit.KryptonContextMenuRadioButton kryptonContextMenuRadioButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckButton kryptonContextMenuCheckButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup1;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
+        private DRSkin_UI.Controls.DRTextBox2 drTextBox22;
+        private DRSkin_UI.Controls.DRTextBox2 drTextBox21;
     }
 }
