@@ -9,11 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRSoftware_POS", "DRSoftwar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRSoftware_DRSkinUI", "..\..\Doctor ERP\DRSkin_UI\DRSoftware_DRSkinUI.csproj", "{9BE75DA2-5917-482A-8A7B-A69D9549B5DE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP_Skin", "..\..\..\..\Visual Studio Tools\ادوات\MaterialSkin-master\MaterialSkin\ERP_Skin.csproj", "{8EB7611B-68CD-4B8B-987A-11717E2B250C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialSkinExample", "..\..\..\..\Visual Studio Tools\ادوات\MaterialSkin-master\MaterialSkinExample\MaterialSkinExample.csproj", "{47409AA5-62AE-4189-8E83-C471502DF5E9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DRSoftware_Lib", "DRSoftware_lib\DRSoftware_Lib.csproj", "{B95FA011-9BB7-4B27-B821-34145310E26B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERP_Skin", "..\..\..\..\Visual Studio Tools\ادوات\MaterialSkin-master\MaterialSkin\ERP_Skin.csproj", "{8EB7611B-68CD-4B8B-987A-11717E2B250C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -47,14 +47,6 @@ Global
 		{9BE75DA2-5917-482A-8A7B-A69D9549B5DE}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9BE75DA2-5917-482A-8A7B-A69D9549B5DE}.Release|x64.ActiveCfg = Release|Any CPU
 		{9BE75DA2-5917-482A-8A7B-A69D9549B5DE}.Release|x64.Build.0 = Release|Any CPU
-		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Debug|x64.Build.0 = Debug|Any CPU
-		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Release|x64.ActiveCfg = Release|Any CPU
-		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Release|x64.Build.0 = Release|Any CPU
 		{47409AA5-62AE-4189-8E83-C471502DF5E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{47409AA5-62AE-4189-8E83-C471502DF5E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47409AA5-62AE-4189-8E83-C471502DF5E9}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -71,6 +63,14 @@ Global
 		{B95FA011-9BB7-4B27-B821-34145310E26B}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B95FA011-9BB7-4B27-B821-34145310E26B}.Release|x64.ActiveCfg = Release|Any CPU
 		{B95FA011-9BB7-4B27-B821-34145310E26B}.Release|x64.Build.0 = Release|Any CPU
+		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Debug|x64.Build.0 = Debug|Any CPU
+		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Release|x64.ActiveCfg = Release|Any CPU
+		{8EB7611B-68CD-4B8B-987A-11717E2B250C}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

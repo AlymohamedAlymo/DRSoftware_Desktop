@@ -32,6 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HomeForm));
             this.tabControlDRSkin1 = new DRSkin_UI.Controls.TabControlDRSkin();
             this.HomeTabPage = new System.Windows.Forms.TabPage();
+            this.drTextBox22 = new DRSkin_UI.Controls.TextBoxDR();
+            this.drTextBox21 = new DRSkin_UI.Controls.TextBoxDR();
             this.SalesTabPage = new System.Windows.Forms.TabPage();
             this.kryptonHeaderGroup1 = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.buttonDRSkin2 = new DRSkin_UI.Controls.ButtonDRSkin();
@@ -60,8 +62,6 @@
             this.SettingTabPage = new System.Windows.Forms.TabPage();
             this.IconList = new System.Windows.Forms.ImageList(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.drTextBox21 = new DRSkin_UI.Controls.DRTextBox2();
-            this.drTextBox22 = new DRSkin_UI.Controls.DRTextBox2();
             this.tabControlDRSkin1.SuspendLayout();
             this.HomeTabPage.SuspendLayout();
             this.SalesTabPage.SuspendLayout();
@@ -100,6 +100,78 @@
             this.HomeTabPage.Size = new System.Drawing.Size(1127, 573);
             this.HomeTabPage.TabIndex = 0;
             this.HomeTabPage.Text = "الرئيسية";
+            // 
+            // drTextBox22
+            // 
+            this.drTextBox22.AnimateReadOnly = false;
+            this.drTextBox22.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.drTextBox22.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.drTextBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.drTextBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.drTextBox22.Depth = 0;
+            this.drTextBox22.ErrorMessage = "رسالة الخطاء";
+            this.drTextBox22.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.drTextBox22.HelperText = "اختبار المساعد";
+            this.drTextBox22.HideSelection = true;
+            this.drTextBox22.Hint = "اختبار الهنت";
+            this.drTextBox22.LeadingIcon = global::DRSoftware_POS.Properties.Resources.arrow_right20;
+            this.drTextBox22.Location = new System.Drawing.Point(491, 289);
+            this.drTextBox22.MaxLength = 32767;
+            this.drTextBox22.MouseState = DRSkin_UI.MouseState.OUT;
+            this.drTextBox22.Name = "drTextBox22";
+            this.drTextBox22.PasswordChar = '\0';
+            this.drTextBox22.PrefixSuffix = DRSkin_UI.Controls.TextBoxDR.PrefixSuffixTypes.Prefix;
+            this.drTextBox22.PrefixSuffixText = "برفكس";
+            this.drTextBox22.ReadOnly = false;
+            this.drTextBox22.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.drTextBox22.SelectedText = "";
+            this.drTextBox22.SelectionLength = 0;
+            this.drTextBox22.SelectionStart = 0;
+            this.drTextBox22.ShortcutsEnabled = true;
+            this.drTextBox22.ShowAssistiveText = true;
+            this.drTextBox22.Size = new System.Drawing.Size(358, 52);
+            this.drTextBox22.TabIndex = 1;
+            this.drTextBox22.TabStop = false;
+            this.drTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.drTextBox22.TrailingIcon = global::DRSoftware_POS.Properties.Resources.arrow_left20;
+            this.drTextBox22.UseAccent = false;
+            this.drTextBox22.UseSystemPasswordChar = false;
+            this.drTextBox22.UseTallSize = false;
+            // 
+            // drTextBox21
+            // 
+            this.drTextBox21.AnimateReadOnly = true;
+            this.drTextBox21.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
+            this.drTextBox21.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
+            this.drTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.drTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.drTextBox21.Depth = 0;
+            this.drTextBox21.ErrorMessage = "رسالة الخطاء";
+            this.drTextBox21.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.drTextBox21.HelperText = "المساعد اختبار";
+            this.drTextBox21.HideSelection = false;
+            this.drTextBox21.Hint = "هنت اختبار";
+            this.drTextBox21.LeadingIcon = global::DRSoftware_POS.Properties.Resources.arrow_right20;
+            this.drTextBox21.LeaveOnEnterKey = true;
+            this.drTextBox21.Location = new System.Drawing.Point(472, 173);
+            this.drTextBox21.MaxLength = 32767;
+            this.drTextBox21.MouseState = DRSkin_UI.MouseState.OUT;
+            this.drTextBox21.Name = "drTextBox21";
+            this.drTextBox21.PasswordChar = '\0';
+            this.drTextBox21.PrefixSuffix = DRSkin_UI.Controls.TextBoxDR.PrefixSuffixTypes.Suffix;
+            this.drTextBox21.PrefixSuffixText = "اختبار السافكس";
+            this.drTextBox21.ReadOnly = false;
+            this.drTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.drTextBox21.SelectedText = "";
+            this.drTextBox21.SelectionLength = 0;
+            this.drTextBox21.SelectionStart = 0;
+            this.drTextBox21.ShortcutsEnabled = true;
+            this.drTextBox21.Size = new System.Drawing.Size(358, 48);
+            this.drTextBox21.TabIndex = 0;
+            this.drTextBox21.TabStop = false;
+            this.drTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.drTextBox21.TrailingIcon = null;
+            this.drTextBox21.UseSystemPasswordChar = false;
             // 
             // SalesTabPage
             // 
@@ -344,78 +416,6 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // drTextBox21
-            // 
-            this.drTextBox21.AnimateReadOnly = true;
-            this.drTextBox21.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.drTextBox21.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.drTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.drTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.drTextBox21.Depth = 0;
-            this.drTextBox21.ErrorMessage = "رسالة الخطاء";
-            this.drTextBox21.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.drTextBox21.HelperText = "المساعد اختبار";
-            this.drTextBox21.HideSelection = false;
-            this.drTextBox21.Hint = "هنت اختبار";
-            this.drTextBox21.LeadingIcon = global::DRSoftware_POS.Properties.Resources.arrow_right20;
-            this.drTextBox21.LeaveOnEnterKey = true;
-            this.drTextBox21.Location = new System.Drawing.Point(472, 173);
-            this.drTextBox21.MaxLength = 32767;
-            this.drTextBox21.MouseState = DRSkin_UI.MouseState.OUT;
-            this.drTextBox21.Name = "drTextBox21";
-            this.drTextBox21.PasswordChar = '\0';
-            this.drTextBox21.PrefixSuffix = DRSkin_UI.Controls.DRTextBox2.PrefixSuffixTypes.Suffix;
-            this.drTextBox21.PrefixSuffixText = "اختبار السافكس";
-            this.drTextBox21.ReadOnly = false;
-            this.drTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.drTextBox21.SelectedText = "";
-            this.drTextBox21.SelectionLength = 0;
-            this.drTextBox21.SelectionStart = 0;
-            this.drTextBox21.ShortcutsEnabled = true;
-            this.drTextBox21.Size = new System.Drawing.Size(358, 48);
-            this.drTextBox21.TabIndex = 0;
-            this.drTextBox21.TabStop = false;
-            this.drTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.drTextBox21.TrailingIcon = null;
-            this.drTextBox21.UseSystemPasswordChar = false;
-            // 
-            // drTextBox22
-            // 
-            this.drTextBox22.AnimateReadOnly = false;
-            this.drTextBox22.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.drTextBox22.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.drTextBox22.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.drTextBox22.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.drTextBox22.Depth = 0;
-            this.drTextBox22.ErrorMessage = "رسالة الخطاء";
-            this.drTextBox22.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.drTextBox22.HelperText = "اختبار المساعد";
-            this.drTextBox22.HideSelection = true;
-            this.drTextBox22.Hint = "اختبار الهنت";
-            this.drTextBox22.LeadingIcon = global::DRSoftware_POS.Properties.Resources.arrow_right20;
-            this.drTextBox22.Location = new System.Drawing.Point(472, 289);
-            this.drTextBox22.MaxLength = 32767;
-            this.drTextBox22.MouseState = DRSkin_UI.MouseState.OUT;
-            this.drTextBox22.Name = "drTextBox22";
-            this.drTextBox22.PasswordChar = '\0';
-            this.drTextBox22.PrefixSuffix = DRSkin_UI.Controls.DRTextBox2.PrefixSuffixTypes.Prefix;
-            this.drTextBox22.PrefixSuffixText = "Suffix text";
-            this.drTextBox22.ReadOnly = false;
-            this.drTextBox22.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.drTextBox22.SelectedText = "";
-            this.drTextBox22.SelectionLength = 0;
-            this.drTextBox22.SelectionStart = 0;
-            this.drTextBox22.ShortcutsEnabled = true;
-            this.drTextBox22.ShowAssistiveText = true;
-            this.drTextBox22.Size = new System.Drawing.Size(358, 52);
-            this.drTextBox22.TabIndex = 1;
-            this.drTextBox22.TabStop = false;
-            this.drTextBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.drTextBox22.TrailingIcon = global::DRSoftware_POS.Properties.Resources.arrow_left20;
-            this.drTextBox22.UseAccent = false;
-            this.drTextBox22.UseSystemPasswordChar = false;
-            this.drTextBox22.UseTallSize = false;
-            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -478,7 +478,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonContextMenuCheckButton kryptonContextMenuCheckButton1;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup kryptonHeaderGroup1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private DRSkin_UI.Controls.DRTextBox2 drTextBox22;
-        private DRSkin_UI.Controls.DRTextBox2 drTextBox21;
+        private DRSkin_UI.Controls.TextBoxDR drTextBox22;
+        private DRSkin_UI.Controls.TextBoxDR drTextBox21;
     }
 }

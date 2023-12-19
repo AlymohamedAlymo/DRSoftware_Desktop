@@ -37,7 +37,7 @@
             this.buttonSpecHeaderGroup3 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
             this.buttonSpecHeaderGroup2 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
             this.dropDown1 = new DRSkin_UI.Controls.DropDown();
-            this.textBoxDRSkin21 = new DRSkin_UI.Controls.DRTextBox2();
+            this.textBoxDRSkin21 = new DRSkin_UI.Controls.TextBoxDR();
             this.maskedTextBoxDRSkin1 = new DRSkin_UI.Controls.MaskedTextBoxDRSkin();
             this.SortItemsPanel = new ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup();
             this.buttonSpecHeaderGroup4 = new ComponentFactory.Krypton.Toolkit.ButtonSpecHeaderGroup();
@@ -106,7 +106,7 @@
             this.MatchSwitch = new DRSkin_UI.Controls.Switch();
             this.StartWithSwitch = new DRSkin_UI.Controls.Switch();
             this.PhoneNumberTXT = new DRSkin_UI.Controls.MaskedTextBoxDRSkin();
-            this.CustomerSearchTXT = new DRSkin_UI.Controls.DRTextBox2();
+            this.CustomerSearchTXT = new DRSkin_UI.Controls.TextBoxDR();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.expansionPanel3 = new DRSkin_UI.Controls.ExpansionPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -310,7 +310,7 @@
             this.textBoxDRSkin21.MouseState = DRSkin_UI.MouseState.OUT;
             this.textBoxDRSkin21.Name = "textBoxDRSkin21";
             this.textBoxDRSkin21.PasswordChar = '\0';
-            this.textBoxDRSkin21.PrefixSuffix = DRSkin_UI.Controls.DRTextBox2.PrefixSuffixTypes.Prefix;
+            this.textBoxDRSkin21.PrefixSuffix = DRSkin_UI.Controls.TextBoxDR.PrefixSuffixTypes.Prefix;
             this.textBoxDRSkin21.PrefixSuffixText = "عميل جديد";
             this.textBoxDRSkin21.ReadOnly = false;
             this.textBoxDRSkin21.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1365,7 +1365,7 @@
             this.CustomerSearchTXT.MouseState = DRSkin_UI.MouseState.OUT;
             this.CustomerSearchTXT.Name = "CustomerSearchTXT";
             this.CustomerSearchTXT.PasswordChar = '\0';
-            this.CustomerSearchTXT.PrefixSuffix = DRSkin_UI.Controls.DRTextBox2.PrefixSuffixTypes.Prefix;
+            this.CustomerSearchTXT.PrefixSuffix = DRSkin_UI.Controls.TextBoxDR.PrefixSuffixTypes.Prefix;
             this.CustomerSearchTXT.PrefixSuffixText = "عميل جديد";
             this.CustomerSearchTXT.ReadOnly = false;
             this.CustomerSearchTXT.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -1594,7 +1594,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox ItemPanelValidIcon;
-        private DRSkin_UI.Controls.DRTextBox2 CustomerSearchTXT;
+        private DRSkin_UI.Controls.TextBoxDR CustomerSearchTXT;
         private DRSkin_UI.Controls.MaskedTextBoxDRSkin PhoneNumberTXT;
         private DRSkin_UI.Controls.Switch MatchSwitch;
         private DRSkin_UI.Controls.Switch StartWithSwitch;
@@ -1643,7 +1643,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton3;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton4;
         private ComponentFactory.Krypton.Toolkit.KryptonRadioButton kryptonRadioButton5;
-        private DRSkin_UI.Controls.DRTextBox2 textBoxDRSkin21;
+        private DRSkin_UI.Controls.TextBoxDR textBoxDRSkin21;
         private DRSkin_UI.Controls.DropDown dropDown1;
         private DRSkin_UI.Controls.MaskedTextBoxDRSkin maskedTextBoxDRSkin1;
         private ComponentFactory.Krypton.Toolkit.KryptonHeaderGroup SearchItemsPanel;
